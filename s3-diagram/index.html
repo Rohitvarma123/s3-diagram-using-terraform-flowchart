@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Terraform Puzzle Architecture</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #0f172a;
+      color: white;
+    }
+
+    .box {
+      border: 2px solid #38bdf8;
+      padding: 15px;
+      margin: 12px auto;
+      border-radius: 8px;
+      background: #020617;
+      width: 300px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+
+    .box:hover {
+      background: #020617;
+      transform: scale(1.05);
+      box-shadow: 0px 0px 12px #38bdf8;
+    }
+
+    .arrow {
+      font-size: 22px;
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Terraform Puzzle Architecture Diagram</h1>
+<h3>By Rohit - DevOps Engineer</h3>
+
+<a href="internet.html" class="box">Internet</a>
+<div class="arrow">↓</div>
+
+<a href="igw.html" class="box">Internet Gateway</a>
+<div class="arrow">↓</div>
+
+<a href="vpc.html" class="box">VPC (10.0.0.0/16)</a>
+<div class="arrow">↓</div>
+
+<a href="subnet.html" class="box">Public Subnet (10.0.1.0/24)</a>
+<div class="arrow">↓</div>
+
+<a href="sg.html" class="box">Security Group (22, 80)</a>
+<div class="arrow">↓</div>
+
+<a href="ec2.html" class="box">EC2 Instance (Nginx)</a>
+
+<br>
+<h3>Click any block to see internal details</h3>
+
+</body>
+</html>
+
